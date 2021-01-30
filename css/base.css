@@ -1,0 +1,119 @@
+body {
+  background: #000;
+  height: 100vh;
+  margin: 60px;
+    padding: 0;
+    font-family: acumin pro;
+    font-size: 10px;
+    font-weight: 700;
+    background: black;
+    color: blue;
+    line-height: 15px;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: acumin-pro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: blue
+}
+
+.central-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+a {
+  color: blue;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+.logo {
+  width: 22vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -5%;
+}
+
+p {
+  text-align: left;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  left: 60px;
+  
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    width: 55vw;
+  }
+
+  p {
+    position: fixed;
+    bottom: 30px;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    width: 55vw;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    width: 55vw;
+  }
+
+  p {
+    position: fixed;
+    bottom: 30px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .logo {
+    width: 55vw;
+  }
+
+  p {
+    position: fixed;
+    bottom: 30px;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .logo {
+    width: 55vw;
+  }
+
+  p {
+    position: fixed;
+    bottom: 30px;
+  }
+}
