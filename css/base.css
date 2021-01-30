@@ -33,9 +33,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  border-bottom: 1px solid;
-}
+
 
 .logo {
   width: 22vw;
