@@ -9,6 +9,7 @@ body {
     background: black;
     color: blue;
     line-height: 15px;
+      letter-spacing: .006rem;
 }
 html,
 body {
