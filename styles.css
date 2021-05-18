@@ -276,6 +276,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -324,6 +331,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -372,6 +386,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -420,6 +441,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -468,6 +496,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -517,6 +552,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -565,6 +607,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -613,6 +662,13 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
 
@@ -661,5 +717,12 @@ p {
     top: 0;
     left: 20px;
 }
+    
+    #canvas {
+    display: none;
+    }
+    
+    #content {
+    background: black}
 
 }
