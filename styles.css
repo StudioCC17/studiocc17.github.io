@@ -43,7 +43,7 @@ html, body {
   position: absolute!important;
   text-align: center;
   font-size: 2.5vw;
-  font-family: acumin pro;
+  font-family: UniversLTStdBoldCn;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0!important;
@@ -63,7 +63,7 @@ html, body {
   text-align: center;
   z-index: 999999999;
   font-size: 2.5vw;
-  font-family: acumin pro;
+  font-family: UniversLTStdBoldCn;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0!important;padding-top: 10px;
@@ -135,7 +135,7 @@ html, body {
 body {
   margin: 0;
   font-size: 18px;
-  font-family: acumin-pro;
+  font-family: UniversLTStdBoldCn;
   line-height: 1.4;
   font-weight: 400
 }
@@ -211,7 +211,7 @@ top: 60px;
 }
 
 p {
-      font-family: acumin-pro, sans-serif;
+      font-family: UniversLTStdBoldCn, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: blue;
     text-align: left;
