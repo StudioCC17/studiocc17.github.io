@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'UniversLTStdBoldCn';
+    src: url('fonts/UniversLTStdBoldCn.eot');
+    src: url('fonts/UniversLTStdBoldCn.eot') format('embedded-opentype'),
+         url('fonts/UniversLTStdBoldCn.woff2') format('woff2'),
+         url('fonts/UniversLTStdBoldCn.woff') format('woff'),
+         url('fonts/UniversLTStdBoldCn.ttf') format('truetype'),
+         url('fonts/UniversLTStdBoldCn.svg#UniversLTStdBoldCn') format('svg');
+}
+
+
 body {
   background: #000;
   height: 100vh;
