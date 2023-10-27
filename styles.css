@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'UniversLTStdBoldCn';
+    src: url('fonts/UniversLTStdBoldCn.eot');
+    src: url('fonts/UniversLTStdBoldCn.eot') format('embedded-opentype'),
+         url('fonts/UniversLTStdBoldCn.woff2') format('woff2'),
+         url('fonts/UniversLTStdBoldCn.woff') format('woff'),
+         url('fonts/UniversLTStdBoldCn.ttf') format('truetype'),
+         url('fonts/UniversLTStdBoldCn.svg#UniversLTStdBoldCn') format('svg');
+}
+
 html, body {
   min-height: 100%;
   overflow-y: hidden; /* Hide vertical scrollbar */
@@ -15,7 +25,7 @@ html, body {
   text-align: center;
   border-top: 1px solid #ffffff;
   font-size: 5vw;
-  font-family: acumin pro;
+  font-family: UniversLTStdBoldCn;
   font-weight: 400;
   letter-spacing: 2px;
   margin: 0!important;
