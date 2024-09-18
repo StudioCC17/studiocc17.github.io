@@ -61,7 +61,7 @@ class Ripples {
             this.ripplesGui.open();
 
             this.guiViscosity = this.ripplesGui.add(this.params.guiParams, 'viscosity', 1 , 15);
-            this.guiSpeed = this.ripplesGui.add(this.params.guiParams, 'speed', 1, 15);
+            this.guiSpeed = this.ripplesGui.add(this.params.guiParams, 'speed', 1, 5);
             this.guiSize = this.ripplesGui.add(this.params.guiParams, 'size', 0.5, 2.5).step(0.025);
 
             this.guiViscosity.onChange((value) => {
