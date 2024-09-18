@@ -6,7 +6,7 @@ class Ripples {
         container = null,
 
         viscosity = 5,
-        speed = 3.5,
+        speed = .5,
         size = 3,
 
         // debug
