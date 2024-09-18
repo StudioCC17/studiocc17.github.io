@@ -374,7 +374,7 @@ class RipplesScene {
 
     constructor({
         viscosity = 5,
-        speed = 13.5,
+        speed = 7.5,
         size = 6,
 
         displacementStrength = 4,
