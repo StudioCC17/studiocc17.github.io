@@ -5,7 +5,7 @@ class Ripples {
         curtains = null,
         container = null,
 
-        viscosity = 15,
+        viscosity = 5,
         speed = 3.5,
         size = 3,
 
