@@ -125,11 +125,16 @@ class Ripples {
             weblgMouseCoords = this.ripples.mouseToPlaneCoords(this.mouse.current.x, this.mouse.current.y);
             this.ripples.uniforms.mousePosition.value = [weblgMouseCoords.x, weblgMouseCoords.y];
 
-            // divided by a frame duration (roughly)
+            // Calculate velocity with resolution-aware scaling
             if(updateVelocity) {
+                const rect = this.getCanvasSizes();
+                // Scale velocity based on screen size to maintain consistency
+                const scaleFactor = Math.min(rect.width, rect.height) / 1000; // Normalize to ~1000px baseline
+                const adjustedFrameTime = 16 * scaleFactor; // Back to original spread
+                
                 this.mouse.velocity = {
-                    x: (this.mouse.current.x - this.mouse.last.x) / 16,
-                    y: (this.mouse.current.y - this.mouse.last.y) / 16
+                    x: (this.mouse.current.x - this.mouse.last.x) / adjustedFrameTime,
+                    y: (this.mouse.current.y - this.mouse.last.y) / adjustedFrameTime
                 };
             }
         }
@@ -220,7 +225,7 @@ class Ripples {
                 float left = texture2D(uTargetTexture, vTextureCoord + speed.zy, 1.0).x;
                 
                 d += -(texelColor.y - 0.5) * 2.0 + (top + right + bottom + left - 2.0);
-                d *= 0.99;
+                d *= 0.995; // Changed from 0.99 to 0.995 to slow decay
                 
                 // skip first frames
                 d *= float(uTime > 5);
@@ -341,8 +346,8 @@ class Ripples {
                 this.ripples.uniforms.velocity.value = [this.mouse.velocity.x, this.mouse.velocity.y];
 
                 this.mouse.velocity = {
-                    x: this.lerp(this.mouse.velocity.x, 0, 0.1),
-                    y: this.lerp(this.mouse.velocity.y, 0, 0.1),
+                    x: this.lerp(this.mouse.velocity.x, 0, 0.05),  // Reduced from 0.1 to 0.05 to slow down
+                    y: this.lerp(this.mouse.velocity.y, 0, 0.05),  // Reduced from 0.1 to 0.05 to slow down
                 };
 
                 this.ripples.uniforms.velocity.value = [this.mouse.velocity.x, this.mouse.velocity.y];
@@ -373,13 +378,13 @@ This is the class that renders the whole scene (tiles texture and title) and app
 class RipplesScene {
 
     constructor({
-        viscosity = 5,
-        speed = 7.5,
-        size = 6,
+        viscosity = 6,
+        speed = 8.8,
+        size = 8.5,
 
-        displacementStrength = 4,
+        displacementStrength = .4,
         lightIntensity = 0,
-        shadowIntensity = 2.5,
+        shadowIntensity = 0,
     } = {}) {
 
         this.params = {
@@ -804,8 +809,8 @@ class RipplesScene {
 
 window.addEventListener("load", () => {
     const rippleScene = new RipplesScene({
-        viscosity: 6,
-        speed: 8.8,
+        viscosity: 1.5,   // Reduced further from 2.25
+        speed: 2.0,       // Reduced further from 3.3  
         size: 8.5,
 
         displacementStrength: .4,
